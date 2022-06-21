@@ -182,5 +182,6 @@ export default {
             console.log(this.phone + this.password);
         }
     },
+    props: ['loggedIn'],
 }
 </script>

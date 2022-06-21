@@ -1,26 +1,24 @@
 <template>
-    xxxx
     <test-comp></test-comp>
-   <login-modal></login-modal>
-   <register-modal></register-modal>
-   <forgot-password-modal></forgot-password-modal>
+    <auth-modal :loggedIn="loggedIn"></auth-modal>
     <router-view></router-view>
 </template>
 
 <script>
 
 import TestComp from './components/TestComp'
-import LoginModal from './src/views/pages/auth/LoginModal'
-import RegisterModal from './src/views/pages/auth/RegisterModal'
-import ForgotPasswordModal from './src/views/pages/auth/ForgotPasswordModal'
+import AuthModal from './src/views/pages/auth/AuthModal'
 
 export default {
     name: 'App',
     components: {
         TestComp,
-        LoginModal,
-        RegisterModal,
-        ForgotPasswordModal
-    }
+        AuthModal,
+    },
+    data() {
+        return {
+            loggedIn: false,
+        }
+    },
 }
 </script>

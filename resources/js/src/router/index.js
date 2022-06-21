@@ -3,20 +3,11 @@ import {createRouter, createWebHistory} from 'vue-router'
 
 const routes = [
     {
-        path: '/login',
-        name: 'LoginModal',
-        component: () => import('../views/pages/auth/LoginModal.vue'),
+        path: '/auth',
+        name: 'AuthModal',
+        component: () => import('../views/pages/auth/AuthModal.vue'),
     },
-    {
-        path: '/register',
-        name: 'RegisterModal',
-        component: () => import('../views/pages/auth/RegisterModal.vue'),
-    },
-    {
-        path: '/forgot-password',
-        name: 'ForgotPasswordModal',
-        component: () => import('../views/pages/auth/ForgotPasswordModal.vue'),
-    }
+   
 ]
 
 const router = createRouter({
