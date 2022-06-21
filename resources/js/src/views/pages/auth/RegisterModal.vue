@@ -1,71 +1,71 @@
 <template>
     <!-- Modal -->
         <div class="modal" id="animation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <div class="w-100">
-                        <h2 class="modal-title text-text-bold-600 text-center mt-1 mb-1" id="cal-modal">
-                            Регистрация в личном кабинете
-                        </h2>
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <div class="w-100">
+                            <h2 class="modal-title text-text-bold-600 text-center mt-1 mb-1" id="cal-modal">
+                                Регистрация в личном кабинете
+                            </h2>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
                     </div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <form>
-                    <div class="modal-body">
-                        <form @submit.prevent="handleSubmit" class="form form-vertical">
-                            <div class="form-body">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label for="contact-info-icon">Mobile</label>
-                                            <div class="position-relative has-icon-left">
-                                                <input type="number" v-model="phone" id="contact-info-icon" class="form-control" name="phone" placeholder="+998 XX XXX-XX-XX">
-                                                <div class="form-control-position">
-                                                    <i class="feather icon-smartphone"></i>
+                    <form>
+                        <div class="modal-body">
+                            <form @submit.prevent="handleSubmit" class="form form-vertical">
+                                <div class="form-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="contact-info-icon">Mobile</label>
+                                                <div class="position-relative has-icon-left">
+                                                    <input type="number" v-model="phone" id="contact-info-icon" class="form-control" name="phone" placeholder="+998 XX XXX-XX-XX">
+                                                    <div class="form-control-position">
+                                                        <i class="feather icon-smartphone"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label for="password-icon">Password</label>
-                                            <div class="position-relative has-icon-left">
-                                                <input type="password" v-model="password" id="password-icon" class="form-control" name="contact-icon" placeholder="Ваш пароль">
-                                                <div class="form-control-position">
-                                                    <i class="feather icon-lock"></i>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="password-icon">Password</label>
+                                                <div class="position-relative has-icon-left">
+                                                    <input type="password" v-model="password" id="password-icon" class="form-control" name="contact-icon" placeholder="Ваш пароль">
+                                                    <div class="form-control-position">
+                                                        <i class="feather icon-lock"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label for="password-icon">Confirm-password</label>
-                                            <div class="position-relative has-icon-left">
-                                                <input type="password" v-model="confirm_password" id="password-icon" class="form-control" name="contact-icon" placeholder="Повторите пароль">
-                                                <div class="form-control-position">
-                                                    <i class="feather icon-lock"></i>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="password-icon">Confirm-password</label>
+                                                <div class="position-relative has-icon-left">
+                                                    <input type="password" v-model="confirm_password" id="password-icon" class="form-control" name="contact-icon" placeholder="Повторите пароль">
+                                                    <div class="form-control-position">
+                                                        <i class="feather icon-lock"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="submit" class="block btn btn-primary mr-1 mb-1">Отправить</button>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="button" class="block btn btn-flat-secondary text-dark">Уже зарегистрирован</button>
-                                        <button type="button" class="block btn btn-flat-secondary text-dark">Забыли пароль?</button>
+                                        <div class="col-12">
+                                            <button type="submit" class="block btn btn-primary mr-1 mb-1">Отправить</button>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="button" class="block btn btn-flat-secondary text-dark">Уже зарегистрирован</button>
+                                            <button type="button" class="block btn btn-flat-secondary text-dark">Забыли пароль?</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
 
-                    </div>
-                </form>
-            </div>    
-        </div>
+                        </div>
+                    </form>
+                </div>    
+            </div>
         </div>
     <!-- Basic Modals end -->
 </template>

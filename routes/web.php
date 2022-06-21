@@ -13,9 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/test', function () {
-    return view('test');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+// Route::get('/test', function () {
+//     return view('test');
+// });
+
+//Route::get('/{any}', 'Controller')->where('any', '.*');
+
+//Route::get('/test', 'Controller@index');
+Route::get('/{any}', [\App\Http\Controllers\Controller::class, 'index']);

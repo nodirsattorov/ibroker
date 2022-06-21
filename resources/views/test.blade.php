@@ -172,11 +172,7 @@
         <div class="content-wrapper">
         
             <div class="content" id="app">
-                <test-comp></test-comp>
-                <!-- Basic Modals start -->
-                 <!-- Modal -->
-                <forgot-password-modal></forgot-password-modal>
-                <!-- Basic Modals end -->
+               
             </div>
         </div>
     </div>
