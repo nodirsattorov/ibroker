@@ -180,6 +180,7 @@ export default {
     methods: {
         handleSubmit(){
             console.log(this.phone + this.password);
+            this.$emit('loggedIn', true);
         }
     },
     props: ['loggedIn'],
