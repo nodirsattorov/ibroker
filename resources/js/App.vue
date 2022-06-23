@@ -2,7 +2,6 @@
     <Header :loggedIn="loggedIn"/>
     <MainMenu />
     <auth-modal @loggedIn="authStatus" :loggedIn="loggedIn"></auth-modal>
-    <router-view></router-view>
     <Content />
     <Footer />
 </template>

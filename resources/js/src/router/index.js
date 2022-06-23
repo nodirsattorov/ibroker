@@ -7,6 +7,11 @@ const routes = [
         name: 'AuthModal',
         component: () => import('../views/pages/auth/AuthModal.vue'),
     },
+    {
+        path: '/test',
+        name: 'Test',
+        component: () => import('../views/pages/test/Test.vue'),
+    },
    
 ]
 
